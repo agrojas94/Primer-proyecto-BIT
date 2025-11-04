@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game experience | Galería</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="navbar bg-body-tertiary" data-bs-theme="dark">
+    <h1>Galería de Videojuegos</h1>
+    <nav class="mt-2">
+      <a href="index.html" class="btn btn-dark">Inicio</a>
+      <a href="galeria.html" class="btn btn-dark">Galería</a>
+      <a href="sobre-nosotros.html" class="btn btn-dark">Sobre Nosotros</a>
+    </nav>
+  </header>
+
+  <main class="container my-5 text-center">
+    <h2>Filtrar por categoría</h2>
+    <div class="mb-4">
+      <button class="btn btn-outline-primary m-1" onclick="filtrarCategoria('todos')">Todos</button>
+      <button class="btn btn-outline-primary m-1" onclick="filtrarCategoria('accion')">Acción</button>
+      <button class="btn btn-outline-primary m-1" onclick="filtrarCategoria('aventura')">Aventura</button>
+      <button class="btn btn-outline-primary m-1" onclick="filtrarCategoria('rpg')">RPG</button>
+    </div>
+
+    <div class="row" id="galeria-juegos">
+      <div class="col-md-3 mb-4 card-item" data-categoria="accion">
+        <a href="detalle.html?game=gta6"> <img src="assets/img/gta6.jpg" class="img-fluid rounded" alt="GTA VI"></a>
+        <p>GTA VI</p>
+      </div>
+      <div class="col-md-3 mb-4 card-item" data-categoria="aventura">
+        <a href="detalle.html?game=spiderman2"><img src="assets/img/spiderman2.jpg" class="img-fluid rounded" alt="Spiderman 2"></a>
+        <p>Spider-Man 2</p>
+      </div>
+      <div class="col-md-3 mb-4 card-item" data-categoria="rpg">
+       <a href="detalle.html?game=starfield"> <img src="assets/img/starfield.jpg" class="img-fluid rounded" alt="Starfield"></a>
+        <p>Starfield</p>
+      </div>
+      <div class="col-md-3 mb-4 card-item" data-categoria="aventura">
+        <img src="assets/img/zelda.jpg" class="img-fluid rounded" alt="Zelda">
+        <p>Zelda: Tears of the Kingdom</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Game experience</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
